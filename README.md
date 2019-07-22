@@ -20,4 +20,19 @@ $ NODE_ENV=staging node index.js // starts your process by using development.js 
 $ NODE_ENV=test node index.js // starts your process by using staging.js DNA
 ```
 
-Be sure to check out https://github.com/lorenwest/node-config/wiki/Configuration-Files to better understand how to organize your cell DNA folder 
+Be sure to check out https://github.com/lorenwest/node-config/wiki/Configuration-Files to better understand how to organize your cell DNA folder.
+
+You can also add secrets.js inside your DNA folder (be sure to gitignore them ;)) and load them using the helper methodd:
+
+```js
+const loadSecrets = require('cell-dna/load-secrets')
+const _ = require('lodash') // optional dependency for your project, use whatever you like for deep copy
+
+module.exports = _.merge({}, loadSecrets(), {
+  port: process.env.PORT || 3001,
+  database: {
+    url: 'http://localhost:8529',
+    name: 'local-db',
+  },
+})
+```
