@@ -2,7 +2,7 @@ module.exports = function loadSecret() {
   let secrets
 
   try {
-    secrets = require(`../dna/secrets`)
+    secrets = require(`../../dna/secrets`)
   } catch (error) {
     secrets = {}
   }
