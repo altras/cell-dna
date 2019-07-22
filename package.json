@@ -1,0 +1,28 @@
+{
+  "name": "cell-dna",
+  "version": "1.0.0",
+  "description": "node-organic DNA loader, depending on node-config",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/altras/cell-dna.git"
+  },
+  "keywords": [
+    "node-organic",
+    "dna",
+    "loader",
+    "node-config"
+  ],
+  "author": "Vitaliy Filipov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/altras/cell-dna/issues"
+  },
+  "homepage": "https://github.com/altras/cell-dna#readme",
+  "dependencies": {
+    "config": "3.2.2"
+  }
+}
