@@ -1,6 +1,6 @@
 {
   "name": "cell-dna",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "node-organic DNA loader, depending on node-config",
   "main": "index.js",
   "scripts": {
