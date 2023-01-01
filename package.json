@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/altras/cell-dna#readme",
   "dependencies": {
-    "config": "3.2.2"
+    "config": "3.3.8"
   }
 }
